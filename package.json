@@ -1,0 +1,24 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Sever hosting the socket",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sixelasacul/beverlyplace-votes.git"
+  },
+  "author": "Alexis Lucas <alexis.lucas1@viacesi.fr>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sixelasacul/beverlyplace-votes/issues"
+  },
+  "homepage": "https://github.com/sixelasacul/beverlyplace-votes#readme",
+  "dependencies": {
+    "express": "^4.17.0",
+    "socket.io": "^2.2.0"
+  }
+}
