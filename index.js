@@ -10,12 +10,12 @@ const server = http.createServer(app);
 const io = socketIO(server);
 
 const {UPDATE} = events;
+let content = com.readData();
 
 io.on("connection", (socket) => {
-    const content = com.readData();
     io.emit(UPDATE, content);
     socket.on(UPDATE, (data) => {
-        com.writeData(data);
+        content = data;
         io.emit(UPDATE, data);
     });
 });
